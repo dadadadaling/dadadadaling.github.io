@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    
+
+    
+    <title>漏斗模型 | Nina&#39;s blog</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="数据分析,漏斗模型" />
+    
+    <meta name="description" content="漏斗模型的内容 Acquisition(获取用户)：用户怎样知道你的存在？ Activation(激活用户)：路过的人是否会进行操作？ Retention(留存)：初次使用后是否还会重复使用？ Revenue(收入)：是否能从对方的行为和动机中盈利？ Referral(传播)：用户是否会帮助你进行产品的推广？  举个🍐：我开了一家花店，当路过的人看到我的花店，就是一次获取；但只有当这个路人进入">
+<meta name="keywords" content="数据分析,漏斗模型">
+<meta property="og:type" content="article">
+<meta property="og:title" content="漏斗模型">
+<meta property="og:url" content="http://yoursite.com/2018/05/13/funnel/index.html">
+<meta property="og:site_name" content="Nina&#39;s blog">
+<meta property="og:description" content="漏斗模型的内容 Acquisition(获取用户)：用户怎样知道你的存在？ Activation(激活用户)：路过的人是否会进行操作？ Retention(留存)：初次使用后是否还会重复使用？ Revenue(收入)：是否能从对方的行为和动机中盈利？ Referral(传播)：用户是否会帮助你进行产品的推广？  举个🍐：我开了一家花店，当路过的人看到我的花店，就是一次获取；但只有当这个路人进入">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/images/funnel.jpg">
+<meta property="og:updated_time" content="2018-09-10T01:52:43.371Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="漏斗模型">
+<meta name="twitter:description" content="漏斗模型的内容 Acquisition(获取用户)：用户怎样知道你的存在？ Activation(激活用户)：路过的人是否会进行操作？ Retention(留存)：初次使用后是否还会重复使用？ Revenue(收入)：是否能从对方的行为和动机中盈利？ Referral(传播)：用户是否会帮助你进行产品的推广？  举个🍐：我开了一家花店，当路过的人看到我的花店，就是一次获取；但只有当这个路人进入">
+<meta name="twitter:image" content="http://yoursite.com/images/funnel.jpg">
+    
+
+    
+        <link rel="alternate" href="/" title="Nina&#39;s blog" type="application/atom+xml" />
+    
+
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.2.4/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">书写生活、记录成长~</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">主页</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/产品开发/">产品开发</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/前端开发/">前端开发</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/爱生活/">爱生活</a></li></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/updateLog">更新日志</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/产品开发/">产品开发</a>
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="post-funnel" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        漏斗模型
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2018/05/13/funnel/" class="article-date">
+            <time datetime="2018-05-13T03:43:44.000Z" itemprop="datePublished">2018-05-13</time>
+        </a>
+    </div>
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/数据分析/">数据分析</a>, <a class="tag-link" href="/tags/漏斗模型/">漏斗模型</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p><img src="/images/funnel.jpg" alt="漏斗模型" title="漏斗模型"></p>
+<h3 id="漏斗模型的内容"><a href="#漏斗模型的内容" class="headerlink" title="漏斗模型的内容"></a>漏斗模型的内容</h3><ul>
+<li>Acquisition(获取用户)：用户怎样知道你的存在？</li>
+<li>Activation(激活用户)：路过的人是否会进行操作？</li>
+<li>Retention(留存)：初次使用后是否还会重复使用？</li>
+<li>Revenue(收入)：是否能从对方的行为和动机中盈利？</li>
+<li>Referral(传播)：用户是否会帮助你进行产品的推广？</li>
+</ul>
+<p>举个🍐：我开了一家花店，当路过的人看到我的花店，就是一次获取；但只有当这个路人进入了花店，才能算是用户被激活；某顾客来了一次以后，又来了一次或多次，这是留存；有顾客购买了我的鲜花，我就有了收入；如果现有的过客向其他人推荐了我的花店，那么就完成了传播。</p>
+<h3 id="漏斗模型不同阶段要提升的数据"><a href="#漏斗模型不同阶段要提升的数据" class="headerlink" title="漏斗模型不同阶段要提升的数据"></a>漏斗模型不同阶段要提升的数据</h3><ul>
+<li>获取用户 </li>
+</ul>
+<p>&emsp;要做什么：用所有的方式吸引用户的注意，无论是免费还是付费的方式。</p>
+<p>&emsp;相关的指标：流量、搜索量、获客成本、点击率等。</p>
+<ul>
+<li>提高活跃度 </li>
+</ul>
+<p>&emsp;要做什么：将游客转化为真正的用户。</p>
+<p>&emsp;相关的指标：注册人数、注册量、新手流程完成度、首次完整使用量、订阅量等。</p>
+<ul>
+<li>提高留存率</li>
+</ul>
+<p>&emsp;要做什么：让用户再次光临，反复使用，产生粘性。</p>
+<p>&emsp;相关的指标：用户的参与度、上次登陆时间、日/月活跃度、流失率等。</p>
+<ul>
+<li>获取营收</li>
+</ul>
+<p>&emsp;要做什么：各种商业产品（购买、广告点击、内容产生量、订阅量等）。</p>
+<p>&emsp;相关的指标：用户终生价值（用户从来到走的消费总额）、付费转化率、平均购物车大小、广告点击营收等等。</p>
+<ul>
+<li>用户传播</li>
+</ul>
+<p>&emsp;要做什么：已存在用户的口碑宣传。</p>
+<p>&emsp;相关的指标：分享率、病毒传播系数、转发量等。</p>
+<h3 id="漏斗模型作用"><a href="#漏斗模型作用" class="headerlink" title="漏斗模型作用"></a>漏斗模型作用</h3><ul>
+<li>通过漏斗分析还原用户行为路径。</li>
+<li>需要关注哪一步流失用户数最多？流失的都是谁及流失这都有哪些行为？</li>
+<li>明确产品目标，根据漏斗模型分析优化产品。</li>
+</ul>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="http://yoursite.com/2018/05/13/funnel/" data-id="cjlvn0xis000jj4tm5k9fpn4q" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>关注我 :</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/ppoffice/hexo-theme-hueman" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2018/07/08/dateAnalysis/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">下一篇</strong>
+        <p class="article-nav-title">
+        
+            电商模式相关数据
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2018/04/01/compete/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">竞品分析</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/09/01/layOut/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/layOut.jpg)" alt="APP版式常见形式" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/产品开发/">产品开发</a></p>
+                            <p class="item-title"><a href="/2018/09/01/layOut/" class="title">APP版式常见形式</a></p>
+                            <p class="item-date"><time datetime="2018-09-01T05:27:10.000Z" itemprop="datePublished">2018-09-01</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/09/01/wayOfUser/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/web.jpg)" alt="前端监控和前端埋点方案设计【转载】" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/前端开发/">前端开发</a></p>
+                            <p class="item-title"><a href="/2018/09/01/wayOfUser/" class="title">前端监控和前端埋点方案设计【转载】</a></p>
+                            <p class="item-date"><time datetime="2018-09-01T03:56:54.000Z" itemprop="datePublished">2018-09-01</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/07/08/dateAnalysis/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/dateAnalysis.jpg)" alt="电商模式相关数据" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/产品开发/">产品开发</a></p>
+                            <p class="item-title"><a href="/2018/07/08/dateAnalysis/" class="title">电商模式相关数据</a></p>
+                            <p class="item-date"><time datetime="2018-07-08T02:54:28.000Z" itemprop="datePublished">2018-07-08</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/05/13/funnel/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/funnel.jpg)" alt="漏斗模型" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/产品开发/">产品开发</a></p>
+                            <p class="item-title"><a href="/2018/05/13/funnel/" class="title">漏斗模型</a></p>
+                            <p class="item-date"><time datetime="2018-05-13T03:43:44.000Z" itemprop="datePublished">2018-05-13</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/04/01/compete/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/compete.jpg)" alt="竞品分析" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/产品开发/">产品开发</a></p>
+                            <p class="item-title"><a href="/2018/04/01/compete/" class="title">竞品分析</a></p>
+                            <p class="item-date"><time datetime="2018-04-01T05:21:02.000Z" itemprop="datePublished">2018-04-01</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+<div class="widget-wrap widget-list">
+    <h3 class="widget-title">联系我</h3>
+    <div class="widget">
+        QQ: 243858827</br>
+        Email: 243858829@qq.com
+    </div>
+</div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/产品开发/">产品开发</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端开发/">前端开发</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/爱生活/">爱生活</a><span class="category-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">归档</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">一月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">十一月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">十月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">九月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">五月 2017</a><span class="archive-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/交互设计/" style="font-size: 20px;">交互设计</a> <a href="/tags/产品立项/" style="font-size: 10px;">产品立项</a> <a href="/tags/埋点设计/" style="font-size: 10px;">埋点设计</a> <a href="/tags/影评/" style="font-size: 15px;">影评</a> <a href="/tags/数据分析/" style="font-size: 15px;">数据分析</a> <a href="/tags/漏斗模型/" style="font-size: 10px;">漏斗模型</a> <a href="/tags/用户体验/" style="font-size: 10px;">用户体验</a> <a href="/tags/竞品分析/" style="font-size: 10px;">竞品分析</a> <a href="/tags/闭包/" style="font-size: 10px;">闭包</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">链接</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2018 大林子</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+        
+    
+    <script>
+    var disqus_shortname = 'hexo-theme-hueman';
+    
+    
+    var disqus_url = 'http://yoursite.com/2018/05/13/funnel/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
